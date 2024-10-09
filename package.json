@@ -1,6 +1,7 @@
 {
   "name": "rwtch",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.13.0",
@@ -20,6 +21,7 @@
     "cors": "^2.8.5",
     "crypto-js": "^4.2.0",
     "dayjs": "^1.11.13",
+    "dotenv-webpack": "^8.1.0",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
     "firebase": "^10.14.0",
@@ -45,7 +47,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.ts src/**/*.tsx",
+    "lint:fix": "eslint src/**/*.ts src/**/*.tsx --fix"
   },
   "eslintConfig": {
     "extends": [
